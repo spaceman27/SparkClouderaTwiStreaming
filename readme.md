@@ -1,4 +1,4 @@
-Requisites:
+## Requisites:
 - if host machine is physical window machine:
     + Need to Enable virtualization in BIOS and enable VT-x support
     + Then install the Hyper-V feature and Management Tools by run powershell
@@ -9,6 +9,9 @@ Requisites:
 	https://serverfault.com/questions/598223/removing-hyper-v-role-from-windows-server-2012-r2
 
 Installation Guide:
+
+
+## Installation
 - Download Cloudera QuickStart VM 5.14(Virtual Box)
   https://downloads.cloudera.com/demo_vm/virtualbox/cloudera-quickstart-vm-5.13.0-0-virtualbox.zip
   
@@ -26,12 +29,9 @@ Installation Guide:
 	
   Install the following components to CentOS 6.7 (Cloudera VM)
   + install Java SDK 1.8
+  ```
     yum install java-1.8.0-openjdk    
-  + Spark 2.3
-    http://apache.mirrors.tds.net/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz
-
-## Installation
-
+  ```
 1. Make sure that yum is up to date by running this command: `sudo yum -y update`
 
 2. Install Kafka follow by this [link from Cloudera](https://www.cloudera.com/documentation/kafka/latest/topics/kafka_installing.html#concept_ctb_k1c_d5)

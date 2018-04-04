@@ -30,7 +30,8 @@
   Install Java 1.8
   ```
     yum install java-1.8.0-openjdk    
-    sudo update-alternatives --config java
+    export PATH=/usr/java/jdk1.8.0_161-cloudera/bin:$PATH
+    sudo update-alternatives --config java    
     java -version
   ```
   make sure we have java 1.8 on set

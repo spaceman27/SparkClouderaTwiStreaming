@@ -8,11 +8,9 @@
 	if you choose to run the script, make sure remove hyper v role from server, so virtual box can use its own hypervisor instead of window hypervisor
 	https://serverfault.com/questions/598223/removing-hyper-v-role-from-windows-server-2012-r2
 
-Installation Guide:
-
-
 ## Installation
 - Download Cloudera QuickStart(Virtual Box)
+  
   https://downloads.cloudera.com/demo_vm/virtualbox/cloudera-quickstart-vm-5.13.0-0-virtualbox.zip
   
 - Open the VM, modify setting:
@@ -21,6 +19,7 @@ Installation Guide:
    + virtual image path is correct 
    
   Troubleshoot for starting the VM
+  
   https://community.cloudera.com/t5/Hadoop-101-Training-Quickstart/How-to-setup-Cloudera-Quickstart-Virtual-Machine/ta-p/35056
   
   Once you launch the VM, you are automatically logged in as the cloudera user:

@@ -8,6 +8,7 @@
 	if you choose to run the script, make sure remove hyper v role from server, so virtual box can use its own hypervisor instead of window hypervisor
 	https://serverfault.com/questions/598223/removing-hyper-v-role-from-windows-server-2012-r2
 
+
 ## Installation
 - Download Cloudera QuickStart(Virtual Box)
   
@@ -25,45 +26,7 @@
   Once you launch the VM, you are automatically logged in as the cloudera user:
 	username: cloudera
 	password: cloudera
-	
-  Install the following components to CentOS 6.7 (Cloudera VM)
-  + Make sure that yum is up to date by running this command: sudo yum -y update
-  + Python 3.62 (Window 64 bit)
-	sudo yum -y groupinstall development  (CentOS Development Tools)
-	Install IUS: sudo yum -y install https://centos6.iuscommunity.org/ius-release.rpm
-	sudo yum -y install python36u
-	Check install by running this command: python3.6 -V with output Python 3.6.1
-	Install Python development that require by install happybase: sudo yum install python36u-devel.x86_64
-	Install PIP: sudo yum -y install python36u-pip
-	
-  + Kafka
-    sudo yum -y clean all
-	sudo yum -y install kafka
-	sudo yum -y install kafka-server
 
-	Create virtualenv with name "twitter" in /home/cloudera directory
-
-mkdir environments
-cd environments
-python3.6 -m venv twitter
-Install PySpark and other libraries to virtualenv from HOME folder
-
-Move to virtualenv "twitter": source /home/cloudera/environments/twitter/bin/activate
-Upgrade setup tools: pip install --upgrade setuptools
-Install PySpark: pip install pyspark
-Install Jupyterlab: pip install jupyterlab
-Install other Python lib:
-    pip install kafka
-    pip install tweepy
-    pip install happybase
-    pip install -U flask
-    pip install -U flask-cors
-    pip install pandas
-    python -mpip install matplotlib
-Install Microsoft's Core Fonts for JupyterLab Virtualization follow by this link:
-
-sudo yum install curl cabextract xorg-x11-font-utils fontconfig
-sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 =======
   ```
     yum install java-1.8.0-openjdk    

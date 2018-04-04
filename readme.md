@@ -26,11 +26,15 @@
   Once you launch the VM, you are automatically logged in as the cloudera user:
 	username: cloudera
 	password: cloudera
-
 =======
+  Install Java 1.8
   ```
     yum install java-1.8.0-openjdk    
+    sudo update-alternatives --config java
+    java -version
   ```
+  make sure we have java 1.8 on set
+
 1. Make sure that yum is up to date by running this command: `sudo yum -y update`
 
 2. Install Kafka follow by this [link from Cloudera](https://www.cloudera.com/documentation/kafka/latest/topics/kafka_installing.html#concept_ctb_k1c_d5)

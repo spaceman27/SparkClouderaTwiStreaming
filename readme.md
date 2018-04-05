@@ -29,12 +29,14 @@
 =======
   Install Java 1.8
   ```
-    yum install java-1.8.0-openjdk    
-    export PATH=/usr/java/jdk1.8.0_161/bin:$PATH
-    sudo update-alternatives --config java    
-    java -version
+    sudo yum install java-1.8.0-openjdk-devel
+    sudo update-alternatives --config java   
+    sudo nano /etc/profile
+    set java home:  export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.51-1.b16.el7_1.x86_64"
+    reload the change: source /etc/profile
+    check java version: java -version
+    https://www.atlantic.net/cloud-hosting/how-to-install-java-jre-jdk-centos-7/
   ```
-  make sure we have java 1.8 on set
 
 1. Make sure that yum is up to date by running this command: `sudo yum -y update`
 
